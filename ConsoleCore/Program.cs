@@ -468,14 +468,24 @@ OOP :  Object Orianted Programming
      A.1- 
   B =>> {Value Type}
         
-     B.1- float        : 4 byte = 32 bit. >> like float z = 15.5f
-     B.2- double       : 8 byte = 64 bit. >> like double z = 15.5 >>>> by defualt.
-     B.3- int          :
-     B.4- string       :
-     B.5- char         :
-     B.6- bool         :
-     B.7- object       :
-     B.8- var          :
+     B.1 - float        : 4 byte  = 32 bit. >> like float z = 15.5f  >> -3.402823e38 to 3.402823e38
+     B.2 - double       : 8 byte  = 64 bit. >> like double z = 15.5  >>>> by defualt. >>  	-1.79769313486232e308 to 1.79769313486232e308 
+     B.3 - int          : 4 byte  = 32 bit. >> like int z = 15       >> -2,147,483,648 to 2,147,483,647 
+     B.4 - string       : **********   A sequence of Unicode characters  *****  
+     B.5 - char         : 2 byte  = 16 bit. >> like char z = 'a'     >> Any valid character, e.g. a,*, \x0058 (hex), or\u0058 (Unicode) 
+     B.6 - bool         : 1 byte  = 8  bit. >> like bool z = true.   >> True or False 
+     B.7 - object       : ********** Base type of all other types.  **********
+     B.8 - DateTime     : ********** Represents date and time       **********  >> 0:00:00am 1/1/01 to 11:59:59pm 12/31/9999 
+     B.9 - byte         : 1 byte  = 8 bit.  >> like byte z = 15.5    >>  0 to 255
+     B.10- sbyte        : 1 byte  = 8 bit.  >> like byte z = 15.5    >>  -128 to 127 
+     B.11- short        : 2 byte  = 16 bit.                          >>  -32,768 to 32,767 
+     B.12- ushort       : 2 byte  = 16 bit. >>                       >>  0 to 65,535 
+     B.13- uint         : 4 byte  = 32 bit. >>                       >>  0 to 4,294,967,295 
+     B.14- long         : 8 byte  = 64 bit. >>                       >>  -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 
+     B.15- ulong        : 8 byte  = 64 bit. >>                       >>  0 to 18,446,744,073,709,551,615  
+     B.16- decimal      : 16 byte = 128 bit.>>                       >>  (+ or -)1.0 x 10e-28 to 7.9 x 10e28  
+     B.17- decimal      : 16 byte = 128 bit.>>                       >>  0 to 18,446,744,073,709,551,615  
+      
 
   */
 
