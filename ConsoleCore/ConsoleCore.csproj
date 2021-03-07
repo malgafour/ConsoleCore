@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="ConsoleCoreLibrary">
+      <HintPath>..\ConsoleCoreLibrary\bin\Debug\netcoreapp3.1\ConsoleCoreLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

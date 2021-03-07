@@ -572,17 +572,20 @@ OOP :  Object Orianted Programming
  *      access              *              take object                *                       inheritance                    *
  *                          *                                         *                                                      *
  *****************************************************************************************************************************
- *   public                 *                   yes                   *                            yes                       *
  *                          *                                         *                                                      *
- *   private                *          scope of class only            *                            no                        *
+ *   public                 *                   YES                   *                            YES                       *
  *                          *                                         *                                                      *
- *   protected              *                   no                    *                            yes                       *
+ *   private                *          scope of class only            *                            NO                        *
  *                          *                                         *                                                      *
- *   internal               *                                         *                                                      *
+ *   protected              *                   no                    *                            YES                       *
  *                          *                                         *                                                      *
- *   protected internal     *                                         *                                                      *
+ *   internal               *                   YES                   *                            YES                       *
+ *                          *                                but within current DLL                                          *
+ *                          *                                         *                                                      *
+ *   protected internal     *       YES but within current DLL        *                            YES                       *
  *                          *                                         *                                                      *
  *   private protected      *                                         *                                                      *
+ *                          *                                         *                                                      *
  *****************************************************************************************************************************
  
  */
@@ -592,5 +595,10 @@ OOP :  Object Orianted Programming
     DLL :
       |
       |____ Dynamic Link Library
+           |
+           |___ have more namespace 
+
+
+
  
  */
