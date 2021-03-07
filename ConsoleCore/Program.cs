@@ -569,7 +569,7 @@ OOP :  Object Orianted Programming
  
  *****************************************************************************************************************************
  *                          *                                         *                                                      *
- *      access              *              take object                *                       inheritance                    *
+ *          access          *              take object                *                       inheritance                    *
  *                          *                                         *                                                      *
  *****************************************************************************************************************************
  *                          *                                         *                                                      *
@@ -577,14 +577,14 @@ OOP :  Object Orianted Programming
  *                          *                                         *                                                      *
  *   private                *          scope of class only            *                            NO                        *
  *                          *                                         *                                                      *
- *   protected              *                   no                    *                            YES                       *
+ *   protected              *                   NO                    *                            YES                       *
  *                          *                                         *                                                      *
  *   internal               *                   YES                   *                            YES                       *
  *                          *                                but within current DLL                                          *
  *                          *                                         *                                                      *
  *   protected internal     *       YES but within current DLL        *                            YES                       *
  *                          *                                         *                                                      *
- *   private protected      *                                         *                                                      *
+ *   private protected      *                   NO                    *              YES but within current DLL              *
  *                          *                                         *                                                      *
  *****************************************************************************************************************************
  
