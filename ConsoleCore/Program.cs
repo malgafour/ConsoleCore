@@ -423,22 +423,27 @@ OOP :  Object Orianted Programming
 /*
   summary of Acess Modifers
     
-    1- Public
+    1- Public :: The type or member can be accessed by any other code in the same assembly or another assembly that references it.
         1.1- Take object.
         1.2- Inherite.
         1.3- All asymbliy.
 
-    2- Private
+    2- Private :: The type or member can be accessed only by code in the same class or struct.
        2.1- In his class only or scope.
 
     3- sealed
        3.1- Its public in project and canot be Inherit.
  
-    4- protected
-       4.1-  
+    4- protected :: The type or member can be accessed only by code in the same class, or in a class that is derived from that class.
 
-    5- private protected
+    5- private protected :: The type or member can be accessed only within its declaring assembly, by code in the same class or in a                         type that is derived from that class.
        5.1-   
+
+    6- internal :: The type or member can be accessed by any code in the same assembly, but not from another assembly.
+       6.1-
+
+    7- protected internal :: The type or member can be accessed by any code in the assembly in which it's declared, or from within a                          derived class in another assembly.
+       7.1-
  
  */
 
