@@ -476,8 +476,8 @@ OOP :  Object Orianted Programming
      B.6 - bool         : 1 byte  = 8  bit. >> like bool z = true.   >> True or False 
      B.7 - object       : ********** Base type of all other types.  **********
      B.8 - DateTime     : ********** Represents date and time       **********  >> 0:00:00am 1/1/01 to 11:59:59pm 12/31/9999 
-     B.9 - byte         : 1 byte  = 8 bit.  >> like byte z = 15.5    >>  0 to 255
-     B.10- sbyte        : 1 byte  = 8 bit.  >> like byte z = 15.5    >>  -128 to 127 
+     B.9 - byte         : 1 byte  = 8 bit.  >>                       >>  0 to 255
+     B.10- sbyte        : 1 byte  = 8 bit.  >>                       >>  -128 to 127 
      B.11- short        : 2 byte  = 16 bit.                          >>  -32,768 to 32,767 
      B.12- ushort       : 2 byte  = 16 bit. >>                       >>  0 to 65,535 
      B.13- uint         : 4 byte  = 32 bit. >>                       >>  0 to 4,294,967,295 
