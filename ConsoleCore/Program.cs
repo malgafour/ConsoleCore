@@ -326,7 +326,7 @@ namespace ConsoleCore  // Project name space
             //foreach
 
             // inline if  , // ternary operator {dision making}.
-            string answer = "good"; 
+            string answer = "good";
             string result = (answer == "good") ? "good job" : "bad job";
             Console.WriteLine(result);
 
@@ -363,17 +363,20 @@ namespace ConsoleCore  // Project name space
             int myAge = 20;
             switch (myAge)
             {
-                case 20: Console.WriteLine("same age");
+                case 20:
+                    Console.WriteLine("same age");
                     break;  // end proccess
 
-                case 30: Console.WriteLine("not match");
+                case 30:
+                    Console.WriteLine("not match");
                     break;  // end proccess
 
-                default: Console.WriteLine("plz chose"); //like else
+                default:
+                    Console.WriteLine("plz chose"); //like else
                     break;
             }
-             
-           
+
+
         }
     }
 }
@@ -558,5 +561,36 @@ OOP :  Object Orianted Programming
      |____ and operator                                    &&
      |
      |____ or operator                                     ||
+ 
+ */
+
+
+/*
+ 
+ *****************************************************************************************************************************
+ *                          *                                         *                                                      *
+ *      access              *              take object                *                       inheritance                    *
+ *                          *                                         *                                                      *
+ *****************************************************************************************************************************
+ *   public                 *                   yes                   *                            yes                       *
+ *                          *                                         *                                                      *
+ *   private                *          scope of class only            *                            no                        *
+ *                          *                                         *                                                      *
+ *   protected              *                   no                    *                            yes                       *
+ *                          *                                         *                                                      *
+ *   internal               *                                         *                                                      *
+ *                          *                                         *                                                      *
+ *   protected internal     *                                         *                                                      *
+ *                          *                                         *                                                      *
+ *   private protected      *                                         *                                                      *
+ *****************************************************************************************************************************
+ 
+ */
+
+
+/*
+    DLL :
+      |
+      |____ Dynamic Link Library
  
  */
