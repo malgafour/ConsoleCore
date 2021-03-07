@@ -9,12 +9,12 @@ namespace ConsoleCore  // Project name space
         // single line comment
 
         // variables with data type
-        int      age = 10;              // integar variable    >> states
-        char     symbol = 'c';          // character variable  >> states
-        string   string1 = "string";    // string variable     >> states
-        double   double1 = 15.5;        // double variable     >> states
-        float    float1 = 15.5f;        // float variable      >> states
-        bool     bool1 = true;          // bool variable       >> states
+        int age = 10;              // integar variable    >> states
+        char symbol = 'c';          // character variable  >> states
+        string string1 = "string";    // string variable     >> states
+        double double1 = 15.5;        // double variable     >> states
+        float float1 = 15.5f;        // float variable      >> states
+        bool bool1 = true;          // bool variable       >> states
 
 
         // Function = Methods
@@ -50,7 +50,7 @@ namespace ConsoleCore  // Project name space
 
         // public integer method  >> Behavior
         // overloading for sallary method.
-        public int sallary(int salary ,int year)
+        public int sallary(int salary, int year)
         {
             return salary * year;
         }
@@ -60,7 +60,7 @@ namespace ConsoleCore  // Project name space
         // overloading for sallary method.
         public string sallary(int salary, string year)
         {
-            return salary +"pear"+ year;
+            return salary + "pear" + year;
         }
 
         // No return type method and it have private access modifire
@@ -97,10 +97,10 @@ namespace ConsoleCore  // Project name space
             return productQuntity;
         }
     }
-     
+
 
     // Example of constractor
-   
+
     class Demo
     {
         // the constrctour is:-
@@ -139,7 +139,7 @@ namespace ConsoleCore  // Project name space
         private static int counter = 0;
         public Demo()
         {
-          int count =   counter++;
+            int count = counter++;
             Console.WriteLine("number of counter of object : " + count);
         }
     }
@@ -162,7 +162,7 @@ namespace ConsoleCore  // Project name space
 
         public static Reco createObj()
         {
-            if(flag == false)
+            if (flag == false)
             {
                 Reco r = new Reco();
                 flag = true;
@@ -181,9 +181,29 @@ namespace ConsoleCore  // Project name space
         }
     }
 
+
+    class utilits
+    {
+
+        static utilits()
+        {
+            Console.WriteLine("priortiy of excution");
+        }
+        public utilits()
+        {
+            Console.WriteLine("excute at the time of object creation");
+        }
+
+
+        public utilits(string name)
+        {
+            Console.WriteLine(name);
+        }
+    }
+
     class MyClass
     {
-        public  string name = "reco sheah ...";
+        public string name = "reco sheah ...";
     }
 
     // Defult Class [Program Class].
@@ -236,8 +256,8 @@ namespace ConsoleCore  // Project name space
             Console.WriteLine(Alex.NumberOfReminingProduct(50));      // 50 requested quntity  >> 0 all quntity
 
 
-          //  Demo d = new Demo();  // proccess 1   >>  time 1  : time of object creation.
-           //d.PrintMe();          // proccess 2   >>  time 2  : time of calling to method.
+            //  Demo d = new Demo();  // proccess 1   >>  time 1  : time of object creation.
+            //d.PrintMe();          // proccess 2   >>  time 2  : time of calling to method.
 
 
             // when class have constructor
@@ -260,8 +280,100 @@ namespace ConsoleCore  // Project name space
             Reco r = Reco.createObj();
             r.speak();
 
-            Reco r2 = Reco.createObj();
-            r2.speak();
+            utilits u = new utilits("reco"); // object from class with overload constructor.
+            string username = "ahmed";
+            string password = "123456";
+            // fore loop
+            for (int i = 0; i < 100; i++) // strucur of for loop with condition and incriment.
+            {
+                if (i % 2 == 0)
+                {
+                    if (i <= 9)
+                    {
+                        Console.WriteLine("even number :  " + i);
+                    }
+                    else
+                    {
+                        Console.WriteLine("even number : " + i);
+                    }
+
+                }
+
+                else
+                {
+                    Console.WriteLine("odd  number :  " + i);
+                }
+
+            }
+
+            // while
+            int index = 0;
+            while (index < 10)
+            {
+                Console.WriteLine(index);
+                index++;
+            }
+
+            // do while
+            int val = 0;
+            do
+            {
+                Console.WriteLine(val);
+                val++;
+            }
+            while (val < 8);
+
+            //foreach
+
+            // inline if  , // ternary operator {dision making}.
+            string answer = "good"; 
+            string result = (answer == "good") ? "good job" : "bad job";
+            Console.WriteLine(result);
+
+
+            //if else
+
+            if (username == "ahmed" && password == "123456")
+            {
+                Console.WriteLine("login success ... ");
+            }
+
+            else
+            {
+                Console.WriteLine("login faild ...");
+            }
+
+            //if elseif else 
+            if (username == "ahmed" && password == "123456")
+            {
+                Console.WriteLine("login success ... ");
+            }
+
+            else if (username == "ahmed" || password == "123456")
+            {
+                Console.WriteLine("login simi success .... ");
+            }
+
+            else
+            {
+                Console.WriteLine("login faild ... ");
+            }
+
+            //swich case comapre between value and value only  >>  like if else but cant using multi operators.
+            int myAge = 20;
+            switch (myAge)
+            {
+                case 20: Console.WriteLine("same age");
+                    break;  // end proccess
+
+                case 30: Console.WriteLine("not match");
+                    break;  // end proccess
+
+                default: Console.WriteLine("plz chose"); //like else
+                    break;
+            }
+             
+           
         }
     }
 }
@@ -376,6 +488,60 @@ OOP :  Object Orianted Programming
 
        
     
+
+ static method : it's have a priority in job
  
+ 
+ */
+
+
+
+/*
+    summary of control statement 
+     |
+     |____ loop statement:
+     |    |
+     |    |____ for -------- {intialize + condition + doing + increment }.
+     |    |
+     |    |____ while ------ {intialize + condition + doing  +increment }.
+     |    |
+     |    |____ do while --- {intialize + doing + condition + increment} excute at least one.
+     |    |
+     |    |____ foreach.
+     |
+     |___ conditional statement:
+         |
+         |____ if.
+         |
+         |____ if else.
+         |
+         |____ if elseif else.
+         |
+         |____ swich case.
+ 
+ */
+
+
+
+/*
+    summary of operators 
+     |
+     |____ comparson operator                              ==
+     |
+     |____ comparson operator with type , count and value  ===
+     |
+     |____ not equal                                       !=
+     |
+     |____ smaller than                                    <
+     |
+     |____ beger than                                      >
+     |
+     |____ smaller than and equal                          <=
+     |
+     |____ beger than and equal                            >=
+     |
+     |____ and operator                                    &&
+     |
+     |____ or operator                                     ||
  
  */
