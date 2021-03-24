@@ -9,12 +9,12 @@ namespace ConsoleCore  // Project name space
         // single line comment
 
         // variables with data type
-        int age = 10;              // integar variable    >> states
-        char symbol = 'c';          // character variable  >> states
+        int age = 10;                 // integar variable    >> states
+        char symbol = 'c';            // character variable  >> states
         string string1 = "string";    // string variable     >> states
         double double1 = 15.5;        // double variable     >> states
-        float float1 = 15.5f;        // float variable      >> states
-        bool bool1 = true;          // bool variable       >> states
+        float float1 = 15.5f;         // float variable      >> states
+        bool bool1 = true;            // bool variable       >> states
 
 
         // Function = Methods
@@ -206,12 +206,24 @@ namespace ConsoleCore  // Project name space
         public string name = "reco sheah ...";
     }
 
+
+    enum Colors
+    {
+        Red = 'R',
+        Green = 'G',
+        Yellow = 'Y'
+    }
+
     // Defult Class [Program Class].
     class Program
     {
         // Main method.
         static void Main()
         {
+            Console.WriteLine(Colors.Red); // return enum key
+            Console.WriteLine((char)Colors.Red); // return enum value
+
+
             Console.Title = "Console App Core";  // Title of the console screen.
 
             // calling class with non static method.
@@ -377,14 +389,43 @@ namespace ConsoleCore  // Project name space
             }
 
 
+            int xa = 5; 
+            double ya = 7.3;
+
+            // working with casting ... 
+
+            xa =(int) ya; // explicit casting
+            ya = xa;  // implicit casting 
+
+            // another implicit casting 
+            var s = "hi"; // string
+            var d = 5;  // int
+
+            // working with Anonymous types
+
+            Demo rr = new Demo();
+            var rrr = new Demo();
+            var anonymousType = new { name = "reco ", age = 25, salary = 1000 };
+            Console.WriteLine(anonymousType.name);
+
+
+            // daynamic type it's can evaluate the compile time at same run time 
+            dynamic uu = 20; // runtime
+            var uuu = 50;   // compile time
+
+
+            const double PI = 3.14; // cannot be re-intialize
+            // PI = 15.5; // > error
+
+
         }
     }
 }
 
 
 /*
-   all copy right to mohamed abd algafour >> 01090406649 >> m.abdalgafour@gmail.com
- 
+  mohamed abd algafour >> 01090406649 >> m.abdalgafour@gmail.com
+ thanks itShare <3
  summary of OOP
   
 OOP :  Object Orianted Programming
@@ -599,6 +640,95 @@ OOP :  Object Orianted Programming
            |___ have more namespace 
 
 
+
+ 
+ */
+
+
+/*
+   ----------- C# TOPICS -----------
+   | 
+   |__Data type
+   | |
+   | |____Value Type
+   | |    |
+   | |    |____Any type you know how many size in memory  like int x = 5;
+   | |
+   | |
+   | |____Reference Type
+   | |
+   | |____Like class demo() {}
+   | 
+   | 
+   | Implicit and Explicit casting
+   | |
+   | |____ implict casting  x = y 
+   | |
+   | |____ explicit casting  x = (double)y
+   | 
+   | 
+   |__Anonymous types
+   | |
+   | |____ its a temparty
+   | 
+   | 
+   |__Dynamic Types
+   | |
+   | |____ daynamic type it's can evaluate the compile time at same run time (dynamic)
+   | 
+   | 
+   |__const
+   | |
+   | |____ cannot be re-intialize
+   | |____ variable name it's principles Uppercase
+   | 
+   |__enum
+   |  |
+   |  |____ to create new type with values
+   | 
+   |__property
+   | |
+   | |___ set; get;
+   |
+   |__StringBuilder
+   | 
+   |__Partial class
+   | 
+   |__Abstract class vs interface
+   | 
+   |__Struct
+   | 
+   |__Array
+   | 
+   |__Collections and Generics
+   | 
+   |__Extentions Methods
+   | 
+   |__Exceptions
+   |____________________
+
+
+ 
+ 
+ */
+
+
+
+/*
+   -- equ of max min signed and unsigned
+     |
+     |__________signed_________
+     |     |  
+     |     |_______ min: -1 * 2^N
+     |     |_______ max:  1 * 2^N
+     |
+     |__________unsigned_________
+           |  
+           |_______ min: 0
+           |_______ min: 2^N-1
+
+
+*************** N ******* >> is a count of bits
 
  
  */

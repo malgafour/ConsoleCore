@@ -15,3 +15,15 @@ namespace ConsoleCoreLibrary
         }
     }
 }
+
+
+namespace MyNamespace
+{
+    public class MyScince
+    {
+         public void DoSomething()
+        {
+            Console.WriteLine("print");
+        }
+    }
+}
