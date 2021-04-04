@@ -26,7 +26,7 @@ namespace ConsoleCore  // Project name space
             return z;  // or return a + b ;
 
             // unreachable 
-            Console.WriteLine(z);
+            // Console.WriteLine(z);
         }
 
         // Sum method >> static method  >> Behavior
@@ -227,7 +227,7 @@ namespace ConsoleCore  // Project name space
     {
         // Main method.
         static void Main()
-        {  
+        {
             Console.WriteLine(Colors.Red); // return enum key
             Console.WriteLine((char)Colors.Red); // return enum value
 
@@ -397,18 +397,18 @@ namespace ConsoleCore  // Project name space
             }
 
 
-            int xa = 5; 
+            int xa = 5;
             double ya = 7.3;
 
             // working with casting ... 
 
-            xa =(int) ya; // explicit casting
+            xa = (int)ya; // explicit casting
             ya = xa;  // implicit casting 
 
             // another implicit casting 
             var s = "hi"; // string
             var d = 5;  // int
-
+            Console.WriteLine(s + d);
             // working with Anonymous types
 
             Demo rr = new Demo();
@@ -420,10 +420,11 @@ namespace ConsoleCore  // Project name space
             // daynamic type it's can evaluate the compile time at same run time 
             dynamic uu = 20; // runtime
             var uuu = 50;   // compile time
-
+            Console.WriteLine(uuu);
 
             const double PI = 3.14; // cannot be re-intialize
             // PI = 15.5; // > error
+            Console.WriteLine(PI);
 
 
         }
@@ -748,6 +749,11 @@ OOP :  Object Orianted Programming
 
 
 *************** N ******* >> is a count of bits
-
- 
  */
+
+
+/*
+
+
+
+*/
