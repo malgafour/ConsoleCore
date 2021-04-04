@@ -220,7 +220,22 @@ namespace ConsoleCore  // Project name space
         Yellow = 'Y'
     }
 
+    // partial class
+    partial class DemoF
+    {
+        public void Eat()
+        {
 
+        }
+        public void Walk()
+        {
+
+        }
+        public void WakeUp()
+        {
+
+        }
+    }
 
     // Defult Class [Program Class].
     class Program
@@ -753,6 +768,7 @@ OOP :  Object Orianted Programming
 
 
 /*
+partial class : 
 
 
 
