@@ -1,4 +1,5 @@
 ﻿using System;  // System Libarary
+using System.Text;
 
 namespace ConsoleCore  // Project name space
 {
@@ -157,7 +158,12 @@ namespace ConsoleCore  // Project name space
         private static bool flag = false;
         private Reco()
         {
+            string name = "mohamed";  // first location
+            name += "abd algafour";   // secound location
 
+            StringBuilder sb = new StringBuilder();
+            sb.Append("mohamed");    // first location 
+            sb.Append("abd algafour"); // at same first location
         }
 
         public static Reco createObj()
@@ -214,12 +220,14 @@ namespace ConsoleCore  // Project name space
         Yellow = 'Y'
     }
 
+
+
     // Defult Class [Program Class].
     class Program
     {
         // Main method.
         static void Main()
-        {
+        {  
             Console.WriteLine(Colors.Red); // return enum key
             Console.WriteLine((char)Colors.Red); // return enum value
 
@@ -691,7 +699,18 @@ OOP :  Object Orianted Programming
    | |___ set; get;
    |
    |__StringBuilder
-   | 
+   | |
+   | |___immutable
+   | |   |
+   | |   |____String s = new String ("Hellow World");
+   | |   |______ s+="Hi";       >> this case have 2 string location in memory 'in heep'
+   | |
+   | |___mutable
+   | |   |
+   | |   |____StringBiulder s = new StringBiulder("Hellow World");
+   | |   |______s.append("Hi");     >> this case have only one string location in memory 'in heep' and updated :)
+   |
+   |
    |__Partial class
    | 
    |__Abstract class vs interface
@@ -705,7 +724,7 @@ OOP :  Object Orianted Programming
    |__Extentions Methods
    | 
    |__Exceptions
-   |____________________
+   |____________________________________________________________________________
 
 
  
