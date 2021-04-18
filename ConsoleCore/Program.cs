@@ -508,6 +508,26 @@ namespace ConsoleCore  // Project name space
             ireport.Body();
             ireport.Footer();
 
+
+            // example of arrays
+            // 1- single dimention array 
+
+            int[] ages = { 10, 20, 80, 40, 50, 15 };
+            // or int[] ages = new int[2];
+            // ages[0] = 1;
+            // ages[1] = 2;
+
+            // or int[] ages = new int[6]  { 10, 20, 30, 40, 50, 60 };
+
+            // sorting array 
+            Array.Sort(ages);
+
+            // reverse array
+            Array.Reverse(ages);
+            for (int i = 0; i < ages.Length; i++)
+            {
+                Console.WriteLine("i[" + i + "]" + "=" + ages[i]);
+            }
         }
     }
 }
@@ -856,4 +876,15 @@ partial class :
     have a abstruct methods
     including signur and implimntation
     class inhiret only one abstruct class and methods should be override
+ */
+
+
+/*
+ Array
+    collection of data have same datatype (hemogenous) , its an object , fixed size.
+
+    1.0 - single dimenstion array
+    2.0 - multi dimenstion array
+    3.0 - array of array (jagged array)
+
  */
