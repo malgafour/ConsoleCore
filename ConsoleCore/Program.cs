@@ -237,6 +237,48 @@ namespace ConsoleCore  // Project name space
         }
     }
 
+    // example to parital class 
+
+    public class para{
+        // do anything
+    }
+
+    public partial class para{
+    // do anything too 
+    }
+
+
+    // example to interface
+
+    public interface Ireport{
+        void Header();
+        void Body();
+        void Footer();
+    }
+
+    public interface Iname{
+    }
+
+    public class PDFReport : Ireport , Iname{
+        public void Header()
+        {
+        
+        Console.WriteLine("pdf header");
+        }
+
+        public void Body()
+        {
+            Console.WriteLine("pdf body");
+        }
+
+        public void Footer()
+        {
+            Console.WriteLine("pdf footer");
+        }
+    }
+
+
+
     // Defult Class [Program Class].
     class Program
     {
@@ -441,6 +483,11 @@ namespace ConsoleCore  // Project name space
             // PI = 15.5; // > error
             Console.WriteLine(PI);
 
+
+            Ireport ireport = new PDFReport();
+            ireport.Header();
+            ireport.Body();
+            ireport.Footer();
 
         }
     }
@@ -769,7 +816,18 @@ OOP :  Object Orianted Programming
 
 /*
 partial class : 
-
-
-
+- multi class name to split methods  
+    class demo
+    partial class demo
+    partial class demo
+.....
 */
+
+
+/*
+ interface  >>>> just blo print
+    is a signtur to uniqe the methodths names .
+    interface implimenting : in class. 
+    class can be inhrite from multi interfaces
+    interfaces canot be token by object.
+ */
