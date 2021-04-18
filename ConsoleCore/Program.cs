@@ -546,6 +546,23 @@ namespace ConsoleCore  // Project name space
                     Console.WriteLine(rectangle[row, coulmn]);
                 }
             }
+
+            // 3- array of array 
+
+            int[][] jagged = new int[3][];
+            jagged[0] = new int[3] { 1, 2, 3 };
+            jagged[1] = new int[2] { 50, 60 };
+            jagged[2] = new int[5] { 1, 2, 3, 4, 5 };
+
+            for (int outer = 0; outer < jagged.Length; outer++)
+            {
+                for (int inner = 0; inner < jagged[outer].Length; inner++)
+                {
+                    Console.Write(jagged[outer][inner] + ",");
+                }
+                Console.WriteLine();
+            }
+			 
         }
     }
 }
