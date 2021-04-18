@@ -277,7 +277,26 @@ namespace ConsoleCore  // Project name space
         }
     }
 
+    // example for abstruct class 
 
+    public abstract class Reports
+    {
+        public abstract void Head();
+        public abstract void Foot();
+        public void Welcome()
+        {
+            Console.WriteLine("Welcome from abstruct !!");
+        }
+    }
+
+
+    public class OnRepo : Reports
+    {
+        public override void Head();
+        public override void Foot();
+         
+
+    }
 
     // Defult Class [Program Class].
     class Program
@@ -830,4 +849,11 @@ partial class :
     interface implimenting : in class. 
     class can be inhrite from multi interfaces
     interfaces canot be token by object.
+ */
+
+/*
+ abstruct class 
+    have a abstruct methods
+    including signur and implimntation
+    class inhiret only one abstruct class and methods should be override
  */
