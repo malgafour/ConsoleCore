@@ -528,6 +528,24 @@ namespace ConsoleCore  // Project name space
             {
                 Console.WriteLine("i[" + i + "]" + "=" + ages[i]);
             }
+
+            // 2- two dimention array
+
+            string[,] rectangle = new string[2, 3];  // row * coulmns
+            rectangle[0, 0] = "mohamed";
+            rectangle[0, 1] = "abd";
+            rectangle[0, 2] = "algafour";
+            rectangle[1, 0] = "ahmed";
+            rectangle[1, 1] = rectangle[0, 0];
+            rectangle[1, 2] = "ali";
+
+            for (int row = 0; row <= rectangle.GetUpperBound(0); row++)
+            {
+                for (int coulmn = 0; coulmn <= rectangle.GetUpperBound(1); coulmn++)
+                {
+                    Console.WriteLine(rectangle[row, coulmn]);
+                }
+            }
         }
     }
 }
