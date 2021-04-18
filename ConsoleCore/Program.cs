@@ -1,5 +1,6 @@
 ﻿using System;  // System Libarary
 using System.Text;
+using System.Collections;
 
 namespace ConsoleCore  // Project name space
 {
@@ -562,7 +563,53 @@ namespace ConsoleCore  // Project name space
                 }
                 Console.WriteLine();
             }
-			 
+
+
+            // example of collections and workink ... 
+
+            // arraylist
+            int[] age = {100,200,300};
+            ArrayList seq = new ArrayList();
+            seq.Add(1);
+            seq.Add('c');
+            seq.InsertRange(1,age);
+            seq.Insert(0,"hi");
+            seq.Remove(100);
+            seq.RemoveAt(0);
+            foreach (var item in seq)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            //sortedlist
+            SortedList seq2 = new SortedList();
+            seq2.Add("team A" ,50);
+            seq2.Add("team B" ,50);
+            seq2.Add("team C" ,50); 
+            foreach (DictionaryEntry item in seq2)
+            {
+                Console.WriteLine(item.Key);
+                Console.WriteLine(item.Value);
+            }
+
+			 // stack
+                Stack st= new Stack();
+                st.Push("1");
+                st.Push("10");
+                st.Push("11");
+                st.Push("12");
+                st.Pop("1");
+                st.Pop("10");
+                st.Pop("11");
+                st.Pop("12");
+
+            //  Queue
+            Queue q = new Queue();
+            q.Enqueue(1);
+            q.Enqueue(15);
+            q.Enqueue(23);
+            q.Enqueue(2);
         }
     }
 }
@@ -921,5 +968,43 @@ partial class :
     1.0 - single dimenstion array
     2.0 - multi dimenstion array
     3.0 - array of array (jagged array)
+ */
 
+
+
+/*
+ Collections
+    collection of data items
+    diffrent data types = hetrogenous
+    using System.Collections;
+    dynamic size 
+        1.0- arraylist
+        2.0- sortedlist
+        3.0- stack
+        4.0- queue
+        5.0- hashtable
+        6.0- bitarray
+ */
+
+
+/*
+ Generic
+    dynamic size 
+    collection of data items
+    hemogenous = have the same data types
+    
+ */
+
+
+/*
+ stack:-
+    last in first out  LIFO
+    push & pop
+ */
+
+
+/*
+ Queue
+    first in last out  FIFO
+    enqueue
  */
